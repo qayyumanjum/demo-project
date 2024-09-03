@@ -1,0 +1,38 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    animation-name: buttonAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.button {
+    /* existing styles */
+
+    box-shadow: 0px 2px 4px rgba(255, 232, 232, 0.2);
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
